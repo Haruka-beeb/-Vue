@@ -1,12 +1,10 @@
 <template>
   <v-app>
-    <!-- Основной контент -->
     <v-main>
       <v-container class="text-center">
-        <!-- Заголовок -->
+ 
         <h1 class="mt-5 mb-5">Менеджер задач</h1>
 
-        <!-- Форма добавления задачи -->
         <v-row justify="center">
           <v-col cols="12" sm="8" md="6">
             <v-text-field
@@ -19,10 +17,10 @@
           </v-col>
         </v-row>
 
-        <!-- Кнопка добавления задачи -->
+      
         <v-btn color="primary" @click="addTask" :disabled="!newTask.trim()">Добавить</v-btn>
 
-        <!-- Список задач -->
+
         <v-list class="mt-5">
           <v-list-item-group>
             <v-list-item v-for="(task, index) in tasks" :key="index">
@@ -38,7 +36,6 @@
                 </v-list-item-title>
               </v-list-item-content>
 
-              <!-- Кнопка удаления задачи -->
               <v-list-item-action>
                 <v-btn icon color="red" @click="removeTask(index)">
                   <v-icon>mdi-delete</v-icon>
@@ -56,19 +53,19 @@
 export default {
   data() {
     return {
-      newTask: "", // Поле для ввода новой задачи
-      tasks: [],   // Массив задач
+      newTask: "", 
+      tasks: [],   
     };
   },
   methods: {
-    // Добавление задачи
+
     addTask() {
       if (this.newTask.trim()) {
         this.tasks.push({ text: this.newTask, done: false });
-        this.newTask = ""; // Очистка поля ввода
+        this.newTask = ""; 
       }
     },
-    // Удаление задачи
+    
     removeTask(index) {
       this.tasks.splice(index, 1);
     },
@@ -91,7 +88,6 @@ mounted() {
 </script>
 
 <style scoped>
-/* Общие стили */
 .v-application {
   background-color: #f5f5f5 !important;
 }
@@ -109,10 +105,9 @@ h1 {
 
 .v-btn {
   margin-top: 10px;
-  text-transform: none; /* Убираем заглавные буквы */
+  text-transform: none; 
 }
 
-/* Стили для списка задач */
 .v-list-item {
   border-radius: 8px;
   margin-bottom: 8px;
@@ -129,7 +124,6 @@ h1 {
   color: #999;
 }
 
-/* Иконка удаления */
 .v-icon {
   cursor: pointer;
   transition: transform 0.2s ease;
