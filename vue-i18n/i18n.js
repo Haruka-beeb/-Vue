@@ -24,7 +24,7 @@ const messages = {
 
 const i18n = new VueI18n({
   locale: 'ru', // язык по умолчанию
-  fallbackLocale: 'en', // язык, который будет использоваться, если перевод отсутствует
+  fallbackLocale: 'en', 
   messages,
 });
 
