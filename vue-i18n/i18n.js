@@ -1,4 +1,3 @@
-// src/i18n.js
 import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 
