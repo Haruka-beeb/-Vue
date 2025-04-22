@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9e4; 
+    color: #22223b; 
+  }
+  
+  #app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c9ada7; 
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #22223b; 
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #4a4e69; 
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  
+  button {
+    background-color: #22223b; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4a4e69; 
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #9a8c98; 
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #9a8c98; 
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  li span {
+    font-size: 0.9em;
+    color: #22223b; 
+  }
+  
+  .progress-input {
+    width: 80px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #9a8c98;
+  }
